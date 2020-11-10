@@ -1,32 +1,41 @@
-// Exercise 1
+// // Exercise 1
 
-const fetch = function (number){
-    
+// const fetch = function (number){
+
+// $.ajax({
+//     method: "GET",
+//     url: `https://www.googleapis.com/books/v1/volumes?q=isbn:${number}`,
+//     success: function(result){
+//         console.log(result.items[0].volumeInfo.title) 
+//     },
+//     error: function(xhr, text, error){
+//         console.log("It's an ERROR")
+
+//     }
+// })
+// }
+
+// fetch(1440633908 )
+
+
+
+// // Exercise 2
+
+
+// const fetch = function (queryType, queryValue){
+
    
-$.get(`https://www.googleapis.com/books/v1/volumes?q=isbn:${number}`, function(result){
-  console.log(result.items[0].volumeInfo.title) 
-})
-
-}
-fetch(9782806269171)
-
-Exercise 2
-
-
-const fetch = function (queryType, queryValue){
-
-   
     
-    $.get(`https://www.googleapis.com/books/v1/volumes?q=${queryType}:${queryValue}`, function(result){
+//     $.get(`https://www.googleapis.com/books/v1/volumes?q=${queryType}:${queryValue}`, function(result){
       
-        console.log(result.items[0].volumeInfo) 
-    })
+//         console.log(result.items[0].volumeInfo) 
+//     })
     
-    }
+//     }
 
 
-fetch("isbn", 9789814561778)
-fetch("title", "How to Win Friends and Influence People")
+// fetch("isbn", 9789814561778)
+// fetch("title", "How to Win Friends and Influence People")
 
 
 // EXERCISE 3
@@ -43,7 +52,7 @@ const fetch = function (queryType, queryValue){
     
       
         array1.forEach(function (result) {
-            console.log("The title is - " + title + ", The author is " + authors + ". The ISBN IS " + ISBN)
+            console.log(`The title is: ${title}, The author is- ${authors}. The ISBN IS ${ISBN}.`)
         });
     })
     
